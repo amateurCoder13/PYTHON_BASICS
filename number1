@@ -1,0 +1,18 @@
+""" 
+Create a program that asks the user to enter their name and their age.
+Print out a message addressed to them that tells them the year that they
+will turn 100 years old.
+"""
+
+import datetime
+
+current = datetime.datetime.now()
+
+userName = raw_input("Please enter your name: ")
+userAge = raw_input("Please enter your age: ")
+
+birthYear = current.year - int(userAge)
+
+year = birthYear + 100
+
+print("Hello Mr." + userName + ", you will turn 100 in the year of " + str(year))
